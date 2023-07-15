@@ -24,7 +24,7 @@ const Nav = () => {
 
   return (
     <nav className='flex-between w-full mb-16 pt-3'>
-      <Link href="/" className='flex gap-2 flex-center' >
+      <Link href="/dashboard" className='flex gap-2 flex-center' >
         <Image
           src='/assets/images/logo.svg'
           alt='logo'
@@ -41,14 +41,17 @@ const Nav = () => {
           <div className='flex gap-3 md:gap-5'>
             <Link href='create-prompt'
             className='black_btn'>
-              Create Post
+              League
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
             </Link>
 
             <button type='button' onClick={signOut} className='outline_btn'>
               Sign Out
             </button>
 
-            <Link href='/profile'>
+            <Link href='/dashboard'>
               <Image 
                 src={session?.user.image}
                 width={37}
@@ -93,7 +96,7 @@ const Nav = () => {
             {toggleDropdown && (
               <div className='dropdown'>
                 <Link 
-                  href='/profile'
+                  href='/dashboard'
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >

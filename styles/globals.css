@@ -65,6 +65,14 @@
   opacity: 0.15;
 }
 
+.icon-tabler-circle-arrow-right:hover {
+  stroke: rgb(108, 108, 108); 
+}
+
+.icon-tabler-circle-arrow-left:hover {
+  stroke: rgb(108, 108, 108); 
+}
+
 @media screen and (max-width: 640px) {
   .main {
     padding: 0;
@@ -167,4 +175,9 @@
 
 .flex-between {
   @apply flex justify-between items-center;
+}
+
+/* Remove Scrollbar */
+.body {
+  overflow: hidden;
 }
