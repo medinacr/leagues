@@ -53,21 +53,28 @@ const Dashboard = () => {
         </div>
       </div>
       <div className='w-full flex justify-between py-8 sm:columns-3 sm:gap-6 xl:columns-3 max-h-full'>
-        <section className='prompt_card flex-grow'>
-          <h1>Schedule</h1>
-          <div>
-            <ol>
-              <li>Team 1 vs Team 2</li>
+        <section className='prompt_card flex-grow !h-[800px]'>
+          <h1 className='mb-5'>Schedule</h1>
+          <div className='prompt flex'>
+            <div className='pr-5'>
+              <p>July</p>
+              <p>17</p>
+            </div>
+            <ol className='flex items-center'>
+              <li className='mx-auto'>Team 1 vs Team 2</li>
             </ol>
           </div>
         </section>
         <section className='prompt_card'>
-          <h1>Feed</h1>
+        <div className='flex justify-between justify-items-center'>
+            <h1 className=''>Feed</h1>
+            <AddButton/>
+          </div>
           <p>Post team messages here!</p>
         </section>
         <section className='prompt_card'>
           <div className='flex justify-between justify-items-center'>
-            <h1 className=''>Messages</h1>
+            <h1 className=''>Chats</h1>
             <AddButton/>
           </div>
           <p>Sample Message</p>
